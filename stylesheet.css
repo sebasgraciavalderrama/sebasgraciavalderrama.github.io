@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/planets/starry.jpg) no-repeat;
+    background-size: cover;
+}
+
+.sun {
+    width: 130px;
+    height: 130px;
+
+    background-position: center;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.rocket {
+    position: absolute;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.sat {
+    position: absolute;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.orbit {
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
